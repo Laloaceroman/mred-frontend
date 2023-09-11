@@ -1,0 +1,40 @@
+
+article
+	position relative
+	overflow hidden
+	color black
+	border 1px solid rgba(0,0,0,.05)
+	a:after
+		content ""
+		cover absolute
+	
+	.article__title
+		margin-bottom 10px
+		font-weight bold
+	
+	.article__description
+		font-weight 300
+		margin-bottom $global-sep + 5
+		opacity .7
+		@media $break-md
+			line-height $global-lh-md
+			font-size $global-size-md
+	
+	&.article--box
+		proportion 1,1
+		.article__bg
+			.bg
+				transition .3s
+		&:hover
+			.article__bg
+				.bg
+					transform scale(1.1)
+		&.article--box--xs
+			padding-bottom 49.1%
+	
+	&.article--product
+		background-color $light
+		padding 10px
+		.article__image
+			margin-bottom 20px
+

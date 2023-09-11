@@ -1,0 +1,92 @@
+extends ../templates/default.jade
+block page
+
+	section.section--product
+		.section__wrap
+			.cols
+				.section__flex
+					.col-md-6
+						.section__gallery
+							.section__gallery__slider.dscroll
+								.slider
+									.slides
+										.slide
+											img(src="img/products/1.jpeg")
+										.slide
+											img(src="img/products/2.jpeg")
+										.slide
+											img(src="img/products/3.jpeg")
+										.slide
+											img(src="img/products/4.jpeg")
+										.slide
+											img(src="img/products/5.jpeg")
+										.slide
+											img(src="img/products/6.jpeg")
+
+							.section__gallery__thumbs.dscroll
+								.section__gallery__thumb
+									img(src="img/products/1.jpeg")
+								.section__gallery__thumb
+									img(src="img/products/2.jpeg")
+								.section__gallery__thumb
+									img(src="img/products/3.jpeg")
+								.section__gallery__thumb
+									img(src="img/products/4.jpeg")
+								.section__gallery__thumb
+									img(src="img/products/5.jpeg")
+								.section__gallery__thumb
+									img(src="img/products/6.jpeg")
+
+					.col-md-6
+						.section__info
+							.section__info__wrap
+								.section__info__box
+
+									.section__content
+										h1.section__title CAPUCHA ALUMINIZADA 1000 °C
+										p.section__description: +lorem(25)
+										ul 
+											li Capucha para protección de cabeza, cuello y pecho.
+											li Protege hasta 1000° grados Celcius de calor de radiación.
+											li Recubrimiento interior de Aramida que protege hasta 600º C. de temperatura.
+											li Para visor de 150×250 mm.
+											li Adecuada para pantallas claras o revestidas en oro.
+											li Longitud de la protección del pecho, aprox. 350 mm.
+											li Talla universal
+
+									.section__buttons
+										a.btn(href="#") Descargar Ficha Técnica
+										a.btn(href="#") Cotizar
+
+	
+	section.section--allproducts
+		.section__wrap
+			.section__header 
+				h3.section__title Productos relacionados
+			.section__body
+				.cols
+					.col-xs-12.col-md-4
+						article.article--product 
+							.article__image 
+								img(src="img/products/1.jpeg")
+							.article__body 
+								h4.article__title: +lorem(5)
+								p.article__description: +lorem(12)
+								a.btn(href="single-product.html") Cotizar
+					.col-xs-12.col-md-4
+						article.article--product 
+							.article__image 
+								img(src="img/products/2.jpeg")
+							.article__body 
+								h4.article__title: +lorem(5)
+								p.article__description: +lorem(12)
+								a.btn(href="single-product.html") Cotizar
+					.col-xs-12.col-md-4
+						article.article--product 
+							.article__image 
+								img(src="img/products/3.jpeg")
+							.article__body 
+								h4.article__title: +lorem(5)
+								p.article__description: +lorem(12)
+								a.btn(href="single-product.html") Cotizar
+

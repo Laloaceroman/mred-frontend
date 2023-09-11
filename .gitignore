@@ -1,0 +1,62 @@
+backend/node_modules
+backend/public/hot
+backend/public/storage
+backend/storage/*.key
+backend/vendor
+backend/.idea
+backend/.vscode
+backend/.vagrant
+backend/Homestead.json
+backend/Homestead.yaml
+backend/npm-debug.log
+backend/yarn-error.log
+backend/.env
+frontend/dist/videos
+
+
+
+
+### Miscellaneous
+.DS_Store
+Thumbs.db
+
+### Composer
+composer.lock
+vendor/
+
+### IDE
+.idea/
+
+### PHPCS
+cs_fixer*
+
+### Wordpress
+backend/htdocs/cms/*
+!backend/htdocs/cms/.gitkeep
+backend/htdocs/content/mu-plugins/themosis-framework/
+backend/htdocs/content/themes/themosis-theme/
+backend/htdocs/content/uploads/
+backend/htdocs/content/upgrade/
+backend/storage/*
+backend/tests/*
+
+
+### Environment Credentials
+.env
+!.env.local
+
+
+bower_components/
+node_modules/
+.DS_Store
+
+### Environment Credentials
+.env
+.env.*
+!.env.local
+
+dist/*
+backend/htdocs/.htaccess
+backend/htdocs/minisitios_memorias/
+backend/htdocs/content/plugins/wordpress-seo/
+backend/s_w_snd_20190221.dump

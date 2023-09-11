@@ -1,0 +1,103 @@
+footer
+	color white
+	text-align left
+	position relative
+
+	.footer__primary
+		position relative
+		background-color $color_secondary
+		z-index 2
+		overflow hidden
+	
+	.footer__title
+		margin-bottom 20px
+		font-weight bold
+	
+	.footer__description
+		font-weight 400
+		font-size 16px
+		line-height 24px
+
+	.footer__wrap
+		position relative
+		max-width $limit
+		margin 0 auto
+		padding 80px 20px
+		padding-bottom 200px
+		@media $break-md
+			padding 100px 20px
+		&.footer__wrap--sm
+			padding 20px !important
+			@media $break-md
+				padding 20px
+
+	
+	.footer__info
+		@media $break-md
+			margin-right 20px
+	
+	.footer__flex
+		@media $break-md
+			display flex
+			align-items center
+
+	.footer__logo
+		img
+			width 250px
+	
+	.footer__nav
+		ul
+			li
+				a
+					position relative
+					display block
+					font-size 16px
+					line-height 22px
+					padding 5px 0
+					color white
+
+	.footer__infos 
+		.footer__info
+			display flex
+			justify-content flex-start
+			align-items center
+			margin-bottom 20px
+			.footer__icon 
+				margin-right 10px
+				img
+					width 50px
+			.footer__text
+				margin-bottom 0
+				font-size 20px
+				line-height 28px
+				font-weight bold
+	
+	.footer__socials
+		display flex
+		align-items center
+		.footer__social
+			circle(50px)
+			background-color white
+			border 2px solid white
+			color $color_primary
+			display flex
+			justify-content center
+			align-items center
+			margin-right 20px
+			&:hover
+				background-color transparent
+				a
+					color white
+			a
+				font-size 24px
+				line-height 32px
+				color $color_secondary
+
+
+	.footer__secondary
+		background-color $dark
+		.footer__copyright
+			text-align center
+			p
+				margin-bottom 0
+				font-weight 300

@@ -1,0 +1,33 @@
+
+.btn
+	font-weight 500
+	display inline-block
+	padding 10px 30px
+	font-size $global-size-xs
+	line-height $global-lh-xs
+	transition .2s
+	background-color $color_secondary
+	border 1px solid $color_secondary
+	color white
+	border-radius 50px
+	max-width 250px
+	text-align center
+	@media $break-md
+		padding 10px 50px
+		font-size 18px
+		line-height 24px
+	span
+		margin-left 10px
+		color white
+
+	&:hover
+		background-color white
+		color $dark
+		span
+			color $dark
+	
+	&.btn--secondary
+		background-color $color_primary
+
+	
+	
